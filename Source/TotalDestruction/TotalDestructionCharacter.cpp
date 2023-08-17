@@ -115,8 +115,6 @@ void ATotalDestructionCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
-		
-	UE_LOG(LogTemp, Warning, TEXT("LookAxisVectorX: %f, LookAxisVectorY: %f"), LookAxisVector.X, LookAxisVector.Y);
 
 	if (Controller != nullptr)
 	{
